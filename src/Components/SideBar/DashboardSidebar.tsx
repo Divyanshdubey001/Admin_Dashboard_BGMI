@@ -50,7 +50,7 @@ const DashboardSidebar = (props: Props) => {
                           ) : null,
                           key: "Dashboard",
                           label: wideSidebar ? (
-                            "Dashboard"
+                            "Game Slot"
                           ) : (
                             <img
                               src="./assets/DashboardImg.svg"
@@ -59,74 +59,20 @@ const DashboardSidebar = (props: Props) => {
                           ),
                         },
                         {
-                          children: wideSidebar
-                            ? [
-                              {
-                                href: "/Syllabus",
-                                key: "Syllabus",
-                                label: "Syllabus",
-                              },
-                              {
-                                href: "/Assignment",
-                                key: "Assignment",
-                                label: "Assignment",
-                              },
-                              {
-                                href: "/student",
-                                key: "Students",
-                                label: "Students",
-                              },
-                            ]
-                            : null,
+                          href: "/Dashboard",
                           icon: wideSidebar ? (
                             <img
-                              src="./assets/TeacherImg.svg"
-                              alt="Teacher_img"
+                              src="./assets/DashboardImg.svg"
+                              alt="dashboard_img"
                             ></img>
                           ) : null,
-                          key: "Teachers",
+                          key: "Dashboard",
                           label: wideSidebar ? (
-                            "Teachers"
+                            "Server Room"
                           ) : (
                             <img
-                              src="./assets/TeacherImg.svg"
-                              alt="Teacher_img"
-                            ></img>
-                          ),
-                        },
-                        {
-                          href: "/Comments",
-                          icon: wideSidebar ? (
-                            <img
-                              src="./assets/CommentsImg.svg"
-                              alt="Comments_img"
-                            ></img>
-                          ) : null,
-                          key: "Comments",
-                          label: wideSidebar ? (
-                            "Comments"
-                          ) : (
-                            <img
-                              src="./assets/CommentsImg.svg"
-                              alt="Comments_img"
-                            ></img>
-                          ),
-                        },
-                        {
-                          href: "/Notifications",
-                          icon: wideSidebar ? (
-                            <img
-                              src="./assets/CommentsImg.svg"
-                              alt="Notifications_img"
-                            ></img>
-                          ) : null,
-                          key: "Notifications",
-                          label: wideSidebar ? (
-                            "Notifications"
-                          ) : (
-                            <img
-                              src="./assets/CommentsImg.svg"
-                              alt="Notifications_img"
+                              src="./assets/DashboardImg.svg"
+                              alt="dashboard_img"
                             ></img>
                           ),
                         },
