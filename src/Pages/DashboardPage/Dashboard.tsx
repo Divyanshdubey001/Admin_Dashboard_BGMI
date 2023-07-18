@@ -12,7 +12,7 @@ export function Dashboard() {
         <Sidebar children={""} />
         <div className={styles.abcd}>
           <div className={styles.sidebar_wrapper}>
-            <Navbar />
+            {/* <Navbar /> */}
           </div>
         </div>
       </div>
