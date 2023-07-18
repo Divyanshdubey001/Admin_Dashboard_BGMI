@@ -29,15 +29,7 @@ export function Navbar() {
           </div>
 
           <ul className={styles.navbarnav}>
-            <li className={styles.navitem}>
-              <Link to="/profile_setting">
-                <img
-                  className={styles.setting}
-                  src="./assets/settingicon.svg"
-                  alt="setting"
-                ></img>
-              </Link>
-            </li>
+
             <li className={styles.navitem}>
               <Popover
                 isOpen={isOpen}
@@ -154,13 +146,13 @@ export function Navbar() {
                     </div>
                     <div className={styles.logoutbutton}>
                       <div>
-                      <img
-                        className={styles.logoutbuttonicon}
-                        src="./assets/logouticon.svg"
-                        alt="logouticon"
-                        onClick={handleLogout}
-                      ></img>
-                      Logout
+                        <img
+                          className={styles.logoutbuttonicon}
+                          src="./assets/logouticon.svg"
+                          alt="logouticon"
+                          onClick={handleLogout}
+                        ></img>
+                        Logout
                       </div>
                     </div>
                   </div>
