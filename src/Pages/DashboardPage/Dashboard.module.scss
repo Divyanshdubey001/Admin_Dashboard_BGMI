@@ -1,0 +1,27 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variable.scss";
+
+.main_container {
+    width: 100%;
+    display: flex;
+}
+
+.abcd {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_container {
+    background-image: linear-gradient(#f5f5f5, #cdefff);
+    position: static;
+}
+
+.sidebar_wrapper {
+    z-index: 99;
+    height: auto;
+}
