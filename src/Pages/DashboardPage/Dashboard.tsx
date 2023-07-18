@@ -13,8 +13,7 @@ export function Dashboard() {
         <div className={styles.abcd}>
           <div className={styles.sidebar_wrapper}>
             <Navbar />
-          </div>
-                      
+          </div>     
           </div>
         </div>
     </>
