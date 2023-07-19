@@ -26,7 +26,7 @@ export function ResetPassword(): JSX.Element {
       <div className={styles.background_container}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <img src="./assets/technogeticlogo.svg" alt="Tg-logo" />
+            <img src="./assets/logo.svg" alt="Tg-logo" />
           </div>
           <div>
             <h2>Forgot Password</h2>
@@ -42,9 +42,8 @@ export function ResetPassword(): JSX.Element {
             <Input
               type="email"
               id="email"
-              className={`${styles.email_wrapper} ${
-                isEmailValid ? "" : styles.invalid
-              }`}
+              className={`${styles.email_wrapper} ${isEmailValid ? "" : styles.invalid
+                }`}
               placeholder="Enter Email"
               value={email}
               onChange={handleEmailChange}
@@ -60,9 +59,8 @@ export function ResetPassword(): JSX.Element {
           <div className={styles.button_wrapper}>
             <Button
               variant="contained"
-              className={`${styles.SignIn_button} ${
-                isButtonEnabled ? styles.blueButton : ""
-              }`}
+              className={`${styles.SignIn_button} ${isButtonEnabled ? styles.blueButton : ""
+                }`}
               disabled={!isButtonEnabled}
             >
               Recover Password
@@ -75,7 +73,7 @@ export function ResetPassword(): JSX.Element {
           </div>
         </div>
         <div className={styles.girlImg_wrapper}>
-          <img src="./assets/pubgImg.png" alt="girl-img" />
+          {/* <img src="./assets/pubgImg.png" alt="girl-img" /> */}
         </div>
       </div>
     </div>

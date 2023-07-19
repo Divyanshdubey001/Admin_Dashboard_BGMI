@@ -89,7 +89,7 @@ export function Navbar() {
               >
                 <img
                   className={styles.notification}
-                  src="./assets/notification.svg"
+                  src="./assets/notificationImg.svg"
                   alt="notification"
                   onClick={() => setIsOpen(true)}
                 ></img>
@@ -130,7 +130,7 @@ export function Navbar() {
                       <div className={styles.flexcol}>
                         <img
                           className={styles.settingicon}
-                          src="./assets/settingicon.svg"
+                          src="./assets/setting.svg"
                           alt="setting"
                         ></img>
                         <div className={styles.myprofile}>Settings</div>
@@ -138,7 +138,7 @@ export function Navbar() {
                       <div className={styles.flexcol}>
                         <img
                           className={styles.notification_icon}
-                          src="./assets/notification.svg"
+                          src="./assets/notificationImg.svg"
                           alt="notification"
                         ></img>
                         <div className={styles.myprofile}>Notification</div>
@@ -172,7 +172,7 @@ export function Navbar() {
             <li className={styles.navitem}>
               <div className={styles.username_details}>
                 <h1>Harry Verma</h1>
-                <span className={styles.profile}>Web Developer</span>
+                <span className={styles.profile}>Admin</span>
               </div>
             </li>
           </ul>

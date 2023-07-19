@@ -19,7 +19,7 @@ const Login = () => {
       <div className={styles.background_container}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <img src="./assets/technogeticlogo.svg" alt="Tg-logo" />
+            <img src="./assets/logo.svg" alt="Tg-logo" />
           </div>
 
           <div>
@@ -80,7 +80,7 @@ const Login = () => {
           </div>
         </div>
         <div className={styles.girlImg_wrapper}>
-          <img src="./assets/pubgImg.png" alt="girl-img" />
+          {/* <img src="./assets/pubgImg.png" alt="girl-img" /> */}
         </div>
       </div>
     </div>
