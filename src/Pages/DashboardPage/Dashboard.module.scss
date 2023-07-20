@@ -9,6 +9,12 @@
   height: 100vh;
 }
 
+.input_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .abcd {
   width: 100%;
   height: 100%;
@@ -22,4 +28,21 @@
 .sidebar_wrapper {
   z-index: 99;
   height: auto;
+}
+
+
+.input_desc Input {
+  border-radius: 8px;
+  color: #8a96a5 !important;
+  font-size: 14px;
+}
+
+.searchbutton {
+  background: var(--bs-darkblue);
+  border-radius: var(--bs-border-radius);
+  color: var(--bs-white);
+  font-size: var(--bs-font-size);
+  cursor: var(--bs-cursor);
+  border: 1px solid transparent;
+  width: 15vw;
 }

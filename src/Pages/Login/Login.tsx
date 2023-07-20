@@ -1,16 +1,16 @@
 import styles from "./auth.module.scss";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 //@ts-ignore
 import { Button, Input } from "technogetic-iron-smart-ui";
 
 const Login = () => {
-  const [rememberMe, setRememberMe] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [rememberMe, setRememberMe] = useState<boolean>(false); // Using boolean type for rememberMe state
+  const [isLoading, setIsLoading] = useState<boolean>(false); // Using boolean type for isLoading state
 
   const navigate = useNavigate();
 
-  function handleRememberMe(event: { target: any }) {
+  function handleRememberMe(event: React.ChangeEvent<HTMLInputElement>) { // Adding type for the event parameter
     setRememberMe(event.target.checked);
   }
 
@@ -68,7 +68,8 @@ const Login = () => {
                   disabled={isLoading}
                   className={styles.forgetbutton}
                   varient="contained"
-                ></Button>
+                >
+                </Button>
               </div>
 
               <div className={styles.signin}>
@@ -88,3 +89,4 @@ const Login = () => {
 };
 
 export default Login;
+

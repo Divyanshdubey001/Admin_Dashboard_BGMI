@@ -14,7 +14,7 @@ interface MenuItem {
   path: string;
   name: string;
   icon: JSX.Element;
-  children?: MenuItem[]; // Add the children property to MenuItem interface
+  children?: MenuItem[];
 }
 
 interface SidebarProps {
@@ -31,104 +31,104 @@ const Sidebar = ({ children }: SidebarProps) => {
       path: "/",
       name: "Room",
       icon: <FaTh />,
-      children: [
+      // children: [
 
-        {
-          path: "/date",
-          name: "Date",
-          icon: <FaBars />,
-        },
-        {
-          path: "/",
-          name: "Room Id",
-          icon: <FaTh />,
-        },
-        {
-          path: "/password",
-          name: "Password",
-          icon: <FaUserAlt />,
-        },
-        {
-          path: "/timing",
-          name: "Timing",
-          icon: <FaRegChartBar />,
-        },
-        {
-          path: "/map",
-          name: "Map",
-          icon: <FaCommentAlt />,
-        },
-        {
-          path: "/squad",
-          name: "Squad",
-          icon: <FaShoppingBag />,
-        },
-      ],
+      //   {
+      //     path: "/date",
+      //     name: "Date",
+      //     icon: <FaBars />,
+      //   },
+      //   {
+      //     path: "/",
+      //     name: "Room Id",
+      //     icon: <FaTh />,
+      //   },
+      //   {
+      //     path: "/password",
+      //     name: "Password",
+      //     icon: <FaUserAlt />,
+      //   },
+      //   {
+      //     path: "/timing",
+      //     name: "Timing",
+      //     icon: <FaRegChartBar />,
+      //   },
+      //   {
+      //     path: "/map",
+      //     name: "Map",
+      //     icon: <FaCommentAlt />,
+      //   },
+      //   {
+      //     path: "/squad",
+      //     name: "Squad",
+      //     icon: <FaShoppingBag />,
+      //   },
+      // ],
     },
     {
       path: "/createServer",
       name: "Spectator",
       icon: <FaUserAlt />,
-      children: [
+      // children: [
 
-        {
-          path: "/Name",
-          name: "Name",
-          icon: <FaBars />,
-        },
-        {
-          path: "/match time",
-          name: "Match time",
-          icon: <FaTh />,
-        },
-        {
-          path: "/assigned map",
-          name: "Assigned Map",
-          icon: <FaUserAlt />,
-        },
-        {
-          path: "/matchroom",
-          name: "Match Room",
-          icon: <FaRegChartBar />,
-        },
-      ]
+      //   {
+      //     path: "/Name",
+      //     name: "Name",
+      //     icon: <FaBars />,
+      //   },
+      //   {
+      //     path: "/match time",
+      //     name: "Match time",
+      //     icon: <FaTh />,
+      //   },
+      //   {
+      //     path: "/assigned map",
+      //     name: "Assigned Map",
+      //     icon: <FaUserAlt />,
+      //   },
+      //   {
+      //     path: "/matchroom",
+      //     name: "Match Room",
+      //     icon: <FaRegChartBar />,
+      //   },
+      // ]
 
     },
     {
       path: "/manageTeam",
       name: "Users",
       icon: <FaRegChartBar />,
-      children: [
+      // children: [
 
-        {
-          path: "/registeredusers",
-          name: "Registered Users",
-          icon: <FaBars />,
-        },
-        {
-          path: "/mobile",
-          name: "Mobile",
-          icon: <FaTh />,
-        },
-        {
-          path: "/email",
-          name: "Email",
-          icon: <FaUserAlt />,
-        },
-      ]
+      //   {
+      //     path: "/registeredusers",
+      //     name: "Registered Users",
+      //     icon: <FaBars />,
+      //   },
+      //   {
+      //     path: "/mobile",
+      //     name: "Mobile",
+      //     icon: <FaTh />,
+      //   },
+      //   {
+      //     path: "/email",
+      //     name: "Email",
+      //     icon: <FaUserAlt />,
+      //   },
+      // ]
     },
     {
       path: "/createTeam",
       name: "Teams",
       icon: <FaCommentAlt />,
-      children: [
+      // children: [
 
-        {
-          path: "/registeredteams",
-          name: "Registered Teams",
-          icon: <FaBars />,
-        },
-      ]
+      //   {
+      //     path: "/registeredteams",
+      //     name: "Registered Teams",
+      //     icon: <FaBars />,
+      //   },
+      // ]
     },
   ];
 
@@ -177,7 +177,8 @@ const Sidebar = ({ children }: SidebarProps) => {
                 <NavLink to={childItem.path} key={childIndex} className={styles.submenu_link}>
                   <div className={styles.submenu}>
                     <div className={styles.submenu_icon}>{childItem.icon}</div>
-                    <div className={styles.submenu_link_text}>{childItem.name}</div></div>
+                    <div className={styles.submenu_link_text}>{childItem.name}</div>
+                  </div>
                 </NavLink>
               ))}
           </div>
@@ -189,3 +190,4 @@ const Sidebar = ({ children }: SidebarProps) => {
 };
 
 export default Sidebar;
+
