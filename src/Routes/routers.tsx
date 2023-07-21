@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loader from "../Pages/Loader/Loader";
 import Login from "../Pages/Login/Login";
 import { ResetPassword } from "../Pages/ResetPassword/ResetPassword";
-import {Dashboard} from "../Pages/DashboardPage/Dashboard"
+import { Dashboard } from "../Pages/DashboardPage/Dashboard"
 import UpdateCredential from "../Pages/UserCredential/UpdateCredential";
 import UpdateCredSuccess from "../Pages/UserCredential/UpdateCredSuccess";
 import { SentMail } from "../Pages/Mailpage/SentMail";
