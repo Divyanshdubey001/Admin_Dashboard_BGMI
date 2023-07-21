@@ -5,12 +5,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { Button, Input } from "technogetic-iron-smart-ui";
 
 const Login = () => {
-  const [rememberMe, setRememberMe] = useState<boolean>(false); // Using boolean type for rememberMe state
-  const [isLoading, setIsLoading] = useState<boolean>(false); // Using boolean type for isLoading state
+  const [rememberMe, setRememberMe] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const navigate = useNavigate();
 
-  function handleRememberMe(event: React.ChangeEvent<HTMLInputElement>) { // Adding type for the event parameter
+  function handleRememberMe(event: React.ChangeEvent<HTMLInputElement>) {
     setRememberMe(event.target.checked);
   }
 
