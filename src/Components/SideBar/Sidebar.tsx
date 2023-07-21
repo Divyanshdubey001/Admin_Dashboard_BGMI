@@ -1,5 +1,6 @@
 import { useState, ReactNode } from "react";
 import styles from "./DashboardSidebar.module.scss";
+
 import {
   FaTh,
   FaBars,
@@ -28,107 +29,24 @@ const Sidebar = ({ children }: SidebarProps) => {
 
   const menuItem: MenuItem[] = [
     {
-      path: "/",
+      path: "/adminDashboard/room",
       name: "Room",
       icon: <FaTh />,
-      // children: [
-
-      //   {
-      //     path: "/date",
-      //     name: "Date",
-      //     icon: <FaBars />,
-      //   },
-      //   {
-      //     path: "/",
-      //     name: "Room Id",
-      //     icon: <FaTh />,
-      //   },
-      //   {
-      //     path: "/password",
-      //     name: "Password",
-      //     icon: <FaUserAlt />,
-      //   },
-      //   {
-      //     path: "/timing",
-      //     name: "Timing",
-      //     icon: <FaRegChartBar />,
-      //   },
-      //   {
-      //     path: "/map",
-      //     name: "Map",
-      //     icon: <FaCommentAlt />,
-      //   },
-      //   {
-      //     path: "/squad",
-      //     name: "Squad",
-      //     icon: <FaShoppingBag />,
-      //   },
-      // ],
     },
     {
-      path: "/createServer",
+      path: "/adminDashboard/spectator",
       name: "Spectator",
       icon: <FaUserAlt />,
-      // children: [
-
-      //   {
-      //     path: "/Name",
-      //     name: "Name",
-      //     icon: <FaBars />,
-      //   },
-      //   {
-      //     path: "/match time",
-      //     name: "Match time",
-      //     icon: <FaTh />,
-      //   },
-      //   {
-      //     path: "/assigned map",
-      //     name: "Assigned Map",
-      //     icon: <FaUserAlt />,
-      //   },
-      //   {
-      //     path: "/matchroom",
-      //     name: "Match Room",
-      //     icon: <FaRegChartBar />,
-      //   },
-      // ]
-
     },
     {
-      path: "/manageTeam",
+      path: "/adminDashboard/teams",
       name: "Users",
       icon: <FaRegChartBar />,
-      // children: [
-
-      //   {
-      //     path: "/registeredusers",
-      //     name: "Registered Users",
-      //     icon: <FaBars />,
-      //   },
-      //   {
-      //     path: "/mobile",
-      //     name: "Mobile",
-      //     icon: <FaTh />,
-      //   },
-      //   {
-      //     path: "/email",
-      //     name: "Email",
-      //     icon: <FaUserAlt />,
-      //   },
-      // ]
     },
     {
-      path: "/createTeam",
+      path: "/adminDashboard/users",
       name: "Teams",
       icon: <FaCommentAlt />,
-      // children: [
-
-      //   {
-      //     path: "/registeredteams",
-      //     name: "Registered Teams",
-      //     icon: <FaBars />,
-      //   },
-      // ]
     },
   ];
 

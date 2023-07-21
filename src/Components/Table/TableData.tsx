@@ -92,8 +92,8 @@ const TableData = (props: StudentProfilePropsType) => {
                                 <div className={styles.filter}>
                                     {columnName}
                                     <div>
-                                        <img src="./assets/upArrow.svg" alt="filterup" onClick={() => handleSort(columnName)}></img>
-                                        <img src="./assets/downArrow.svg" alt="filterdown" onClick={() => handleSort(columnName)}></img>
+                                        <img src="/assets/upArrow.svg" alt="filterup" onClick={() => handleSort(columnName)}></img>
+                                        <img src="/assets/downArrow.svg" alt="filterdown" onClick={() => handleSort(columnName)}></img>
                                     </div>
                                 </div>
                             </TableHead>
@@ -134,36 +134,20 @@ const TableData = (props: StudentProfilePropsType) => {
                                     {additionalImagePath ? (
                                         <IconButton>
                                             <div className={styles.iconWrapper}>
-                                                <img
-                                                    src={additionalImagePath}
-                                                    alt="studentProfileView"
-                                                    className={styles.table_icon}
-                                                ></img>
+                                                <img src="/assets/StudentProfile.svg" alt="studentProfileView" className={styles.table_icon}></img>
                                                 <span>View Profile</span>
                                             </div>
                                         </IconButton>
                                     ) : (
                                         <>
                                             <IconButton>
-                                                <img
-                                                    src="./assets/TableProfile.svg"
-                                                    alt="studentProfile"
-                                                    className={styles.cell_icon}
-                                                ></img>
+                                                <img src="/assets/TableProfile.svg" alt="studentProfile" className={styles.cell_icon}></img>
                                             </IconButton>
                                             <IconButton onClick={() => handleEdit(studentData)}>
-                                                <img
-                                                    src="./assets/TableEdit.svg"
-                                                    alt="studentProfileEdit"
-                                                    className={styles.cell_icon}
-                                                ></img>
+                                                <img src="/assets/TableEdit.svg" alt="studentProfileEdit" className={styles.cell_icon}></img>
                                             </IconButton>
                                             <IconButton onClick={() => handleDelete(studentData)}>
-                                                <img
-                                                    src="./assets/TableDelete.svg"
-                                                    alt="studentProfileDelete"
-                                                    className={styles.cell_icon}
-                                                ></img>
+                                                <img src="/assets/TableDelete.svg" alt="studentProfileDelete" className={styles.cell_icon}></img>
                                             </IconButton>
                                         </>
                                     )}
@@ -178,3 +162,10 @@ const TableData = (props: StudentProfilePropsType) => {
 };
 
 export default TableData;
+
+
+
+
+
+
+
