@@ -71,7 +71,7 @@ h2 {
   @include email_wrapper;
 
   input {
-    background-color: var(--bs-black);
+    // background-color: var(--bs-grey);
     color: var(--bs-white);
   }
 }
@@ -81,7 +81,7 @@ h2 {
   @include password_wrapper;
 
   input {
-    color: var(--bs-darkblue) !important;
+    color: var(--bs-grey) !important;
 
   }
 }
@@ -126,7 +126,7 @@ span{
 
 .SignIn_button {
   @include button_wrapper;
-  background-color: var(--bs-lightgrey) !important;
+  background-color: var(--bs-orange) !important;
 
   @media (max-width: $breakpoint-xs) {
     width: 100%;
